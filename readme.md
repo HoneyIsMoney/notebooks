@@ -1,6 +1,6 @@
 # Notebooks
 
-Monorepo for my prototype python and javascript notebooks.
+Prototype python and javascript notebooks.
 
 ## Setup
 create a virtual environment:
