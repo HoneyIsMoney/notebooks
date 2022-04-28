@@ -32,7 +32,9 @@ ijsinstall
 #### MacOS
 
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/main/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install pkg-config node zeromq
 sudo easy_install pip
 pip install --upgrade pyzmq jupyter
