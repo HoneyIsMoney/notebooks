@@ -3,11 +3,12 @@
 Prototype python and javascript notebooks.
 
 ## Setup
+
 create a virtual environment:
 
 ```
 python3 -m venv venv
-source venv/bin/activate                           
+source venv/bin/activate
 ```
 
 then install packages:
@@ -17,13 +18,7 @@ pip install -r requirements.txt
 yarn
 ```
 
-create a `.env` file with the following variables:
-
-```
-RPC_Endpoint="YORR_RPC_URL"
-Etherscan_APIKEY="YOUR_API_KEY"
-FRAME_RPC="127.0.0.1:1248"
-```
+rename `env.example` to `.env`
 
 ## Add the NodeJS kernel
 
@@ -33,6 +28,7 @@ FRAME_RPC="127.0.0.1:1248"
 npm install -g ijavascript
 ijsinstall
 ```
+
 #### MacOS
 
 ```
@@ -44,10 +40,21 @@ npm install -g ijavascript
 ijsinstall
 ```
 
-## Usage
-environment variables are lazy loaded from `.env` file. To use in a notebook 
+## Tips
+
+#### Load environment variables
+
+environment variables are lazy loaded from `.env` file. To use in a notebook
 you need to add the following line to the top of the notebook:
 
 ```
 Etherscan_APIKEY = config('ETHERSCAN_APIKEY')
 ```
+
+#### Using a forked network
+
+```
+ganache-cli --fork "RPC_FORK_URL"
+```
+
+#### Variable explorer
