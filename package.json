@@ -1,0 +1,15 @@
+{
+  "name": "notebooks",
+  "version": "1.0.0",
+  "description": "Prototype python and javascript notebooks.",
+  "main": "index.js",
+  "repository": "git@github.com:HoneyIsMoney/notebooks.git",
+  "author": "HoneyIsMoney <HoneyIsMoney@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.6.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

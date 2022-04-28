@@ -14,6 +14,7 @@ then install packages:
 
 ```
 pip install -r requirements.txt
+yarn
 ```
 
 create a `.env` file with the following variables:
